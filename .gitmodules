@@ -1,0 +1,3 @@
+[submodule "yuva-submodule-002"]
+	path = yuva-submodule-002
+	url = https://github.com/yuvaraviteja/yuva-submodule-002.git

@@ -1,1 +1,16 @@
+name: GitHub Actions
 
+on: [push]
+
+jobs:
+  github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: github checkout
+        uses: actions/checkout@v3
+        with: 
+          token: ${{github.token}}
+
+        run: |
+          echo $GITHUB_REPOSITORY
+          echo "${{github.token}}"
